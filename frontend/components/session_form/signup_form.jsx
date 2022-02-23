@@ -96,7 +96,7 @@ function SignupForm(){
         return (
             <div>
             <div className="login-form-container">
-                <h1><img className="logo-blue" src="/Drinkly-logo-official.png" /></h1>
+                <Link to="/" style={{marginTop: '20px'}}><img className="logo-blue" src="/Drinkly-logo-official.png" /></Link>
                 <div className="topLine"></div>
                 <form onSubmit={(e) => handleSubmit(e)} className="login-form-box">
                     <div className = "signInText">Sign Up</div>

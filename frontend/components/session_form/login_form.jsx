@@ -7,7 +7,7 @@ function LoginForm () {
     const authContext = useContext(AuthContext);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [errors, setErrors] = useState('');
+    const [errors, setErrors] = useState(Object.values(authContext.currentRestaurant).length!== 0 ? 'Please log in first to add items to cart.' : authContext.locationSearchBool === true ? 'Please log in first to search by location.' : '');
 
     const login = async (user) => (
     $.ajax({
@@ -65,7 +65,7 @@ function LoginForm () {
         return (
             <div className="login-form-large-container">
             <div className="login-form-container">
-                <h1><img className="logo-blue" src="/Drinkly-logo-official.png" /></h1>
+                <Link to="/" ><img className="logo-blue" src="/Drinkly-logo-official.png" /></Link>
                 <div className="topLine"></div>
                 <form onSubmit={(e)=>handleSubmit(e)} className="login-form-box">
                     <div className = "signInText">Sign In</div>
