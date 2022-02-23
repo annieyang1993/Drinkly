@@ -160,7 +160,7 @@ function GreetingPage(){
           <div className="footer-greeting">
             <div className = 'social-wrapper'>
               <a className="linkedin" href="https://www.linkedin.com/in/annie-yang-48780175/" target="_blank">
-                 <img className="logo" src="/Linkedin.png" /></a> 
+                 <img className="logo" src="/LinkedIn.png" /></a> 
             </div>
 
             <div className = 'social-wrapper'>
