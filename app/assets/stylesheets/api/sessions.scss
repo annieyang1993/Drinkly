@@ -53,7 +53,7 @@
 }
 .welcome{
     position: relative;
-    margin-top: 25vh;
+    margin-top: 150px;
     font-size: 400%;
     color: rgb(255, 255, 255);
     width: 750px;
@@ -100,8 +100,9 @@
     left: 50%;
     transform: translate(-50%);
     margin-top: 50px;
-    height: 500px;
+    min-height: calc(100vh - 800px);
     max-width: 1200px;
+
 
 }
 
@@ -475,6 +476,9 @@
     position: relative;
     left: 50%;
     transform: translate(-50%);
+}
+
+@media screen and (min-width: 1900px){
 }
 
 @media screen and (max-width: 1100px){

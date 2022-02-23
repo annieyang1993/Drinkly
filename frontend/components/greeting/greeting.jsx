@@ -120,7 +120,7 @@ function GreetingPage(){
           
           <SessionLinks/>
           
-        <div className = "welcome" top="50%" left="50%" color="white">Coffee shops and more, ready out the door</div>
+        <div className = "welcome" top="100px" left="50%" color="white">Coffee shops and more, ready out the door</div>
         
         <br/>
         <div>
