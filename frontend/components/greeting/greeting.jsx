@@ -73,11 +73,11 @@ function GreetingPage(){
        <img className="drinkly-logo-splash" src="Drinkly-logo-official-white.png"/>
        <div className = "signupBackground">
        <Link to="/signup" className = "signupContainer" onClick={()=>{authContext.setLocationSearch('');
-        authContext.setLocationSearchBool(false);}}>Sign up</Link>
+        authContext.setLocationSearchBool(false); authContext.setCurrentRestaurant({})}}>Sign up</Link>
         </div>
         <div className = "signupBackground2">
        <Link to="/login" className = "signupContainer2" onClick={()=>{authContext.setLocationSearch('');
-        authContext.setLocationSearchBool(false);}}>Sign In</Link>
+        authContext.setLocationSearchBool(false); authContext.setCurrentRestaurant({})}}>Sign In</Link>
         </div>
      </nav>)
     
