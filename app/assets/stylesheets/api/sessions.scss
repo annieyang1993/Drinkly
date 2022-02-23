@@ -1,0 +1,540 @@
+// Place all the styles related to the api/sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.root{
+    margin: 0px;
+}
+.bodyContainer{
+    margin: 0px;
+}
+
+.headerImg{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.splashHeader{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    position: relative;
+    z-index: 0;
+    // background-image: url('/HeaderImgClean5.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.splash-img{
+    width: 100%;
+    height: 600px;
+    opacity: 0.9;
+    object-fit:cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.splash-header-info-wrapper{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+#root{
+    font-family: sans-serif;
+}
+.welcome{
+    position: relative;
+    padding-top: 25vh;
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+    width: 750px;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-weight: bold;
+    
+    z-index: 1;
+    //text-shadow: 0.2px 0.2px 0.2px black;
+   
+}
+
+.greetingContainer{
+    min-height: 100vh;
+    align-items: center;
+    align-content: center;
+}
+
+
+.drinkly-logo-splash{
+    width: 150px;
+    float: left;
+    margin-left: 50vw;
+    transform: translate(-50%)
+}
+
+
+
+.splash-restaurant-img{
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+
+
+.recommended-restaurants{
+    font-size: 170%;
+    font-weight: bold;
+    width: 90%;
+    align-self: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    height: 500px;
+    max-width: 1200px;
+
+}
+
+.recommended-cafes{
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element-name{
+    font-weight: bold;
+    font-size: 70%;
+    z-index: 100;
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+
+.splash-links{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+}
+
+.element-splash-img{
+    width: 90%;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+    
+
+
+}
+
+.element-splash-img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.198);
+
+}
+
+.recommended-container{
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+}
+
+
+
+.address-input{
+    position: relative;
+    // border-color: rgba(28, 28, 34, 0.582);
+    border: 1px solid rgba(128, 128, 128, 0.548);
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.address-input:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.13);
+}
+
+.address-submit{
+    position: relative;
+    height: 30px;
+    border-color: rgb(28, 28, 34);
+    border: 1px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 5px;
+    width: 50px;
+    margin-left: -65px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+.delivery-search-box{
+    margin-top: 50px;
+    margin-left: calc(50% - 225px);
+    margin-top: 50px;
+    width: 450px;
+    border: 10px;
+    border-color: black;
+    height: 30px;
+    
+}
+
+
+
+
+.login-signup{
+    float: right;
+    margin-top: 30px;
+    width: 200px;
+    font-size: 100%;
+    z-index: 5;
+    width: 100%;
+
+}
+.loginContainer{
+    float: right;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 25px;
+}
+
+
+.signupContainer{
+    float: right;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.signupContainer:hover{
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.226)
+}
+
+.signupContainer2:hover{
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.226)
+}
+
+.info-box{
+    width: 100%;
+}
+
+.info-below{
+    font-size: 60%;
+    font-weight: normal;
+    color: gray;
+    float: left;
+    margin-left: 5px;
+}
+
+.info-below2{
+    font-size: 60%;
+    font-weight: normal;
+    color: gray;
+    float: right;
+    padding-right: 5%;
+}
+
+.signupContainer2{
+    float: right;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(24, 174, 185);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+
+    
+    
+}
+
+.secondImg{
+    position: relative;
+    float: right;
+    width: 60%
+}
+
+.secondText{
+    //height: 400px;
+    float: left;
+    text-align: center;
+    width: 40%;
+    border: black;
+    text-align: middle;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(38, 102, 105);
+    padding-top: 75px;
+}
+
+.secondLayer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    z-index: 1050;
+}
+
+.secondButton{
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(81, 207, 216);
+    color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    height: 50px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+.thirdButton{
+    height: 30px;
+    font-weight: bold;
+    background-color: rgb(81, 207, 216);
+    color: white;
+    border-radius: 20px;
+    border-width: 0px;
+    height: 50px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+
+
+.thirdImg{
+    position:relative;
+    float:left;
+    padding-top: 20px;
+    width: 60%;
+}
+
+.thirdText{
+    position: relative;
+    float: right;
+    text-align: center;
+    width: 40%;
+    border: black;
+    text-align: middle;
+    margin-top: 50px;
+    font-weight: bold;
+    padding-top: 75px;
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(38, 102, 105);
+    padding-top: 75px;
+}
+
+
+.thirdLayer{
+    position:relative;
+    width:100%;
+    margin-top: 50px;
+    z-index: 1100;
+}
+
+.backgroundColor{
+    background-color: rgba(81, 207, 216, 0.226);
+    width: 100%;
+    height: 750px;
+    margin-top: -120px;
+    position: relative;
+    top: 300%; left: 0px; 
+    z-index: 1000;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    z-index: 1001;
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.social-wrapper{
+    margin-left: 2%;
+    margin-top: 40px;
+    float: right;
+}
+
+.footer-greeting{
+    position: relative;
+    top: 50px;
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    z-index: 1001;
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.login-form-large-container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow-y: scroll;
+}
+
+.linkedin{
+    text-decoration: none;
+    color: white;
+
+}
+
+.github{
+    text-decoration: none;
+    color: white;
+
+}
+
+.logo{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.firstHeader{
+    font-size: 120%;
+    height: 5px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.first{
+    width: 20%;
+    float: left;
+    //margin-left: 10px;
+}
+
+
+
+.third{
+    width: 20%;
+    float: left;
+}
+
+.social-text{
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social-icons{
+    height: 30px;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 1100px){
+    .element-splash-img{
+        width: 90%;
+    }
+
+    .recommended-container{
+        width: 50%;
+        
+    }
+
+    .drinkly-logo-splash{
+        margin-left: 5%;
+        transform: translate(0%);
+    }
+
+    .signupContainer{
+        margin-right: 5%;
+    }
+
+    .welcome{
+        width: 90%;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .splash-img{
+        width: 100%;
+    }
+
+    .splashHeader{
+        width: 100%;
+    }
+
+    .splash-header-info-wrapper{
+        width: 100%;
+    }
+
+    .adress-input{
+        width: 80%;
+    }
+
+    .delivery-search-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .element-splash-img{
+        width: 90%;
+    }
+
+    .recommended-container{
+        width: 100%;
+    }
+}
+
+
+
+

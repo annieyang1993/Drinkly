@@ -1,0 +1,15 @@
+current directory: /Users/annieyang/Desktop/DoorDash_Clone_Final/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/annieyang/.rbenv/versions/2.7.3/bin/ruby -I /Users/annieyang/.rbenv/versions/2.7.3/lib/ruby/2.7.0 -r ./siteconf20211012-75082-d9fv5i.rb extconf.rb
+creating Makefile
+
+current directory: /Users/annieyang/Desktop/DoorDash_Clone_Final/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/annieyang/Desktop/DoorDash_Clone_Final/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/annieyang/Desktop/DoorDash_Clone_Final/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20211012-75082-hxrmvo/skiptrace/internal

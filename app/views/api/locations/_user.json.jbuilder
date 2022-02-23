@@ -1,0 +1,1 @@
+json.extract! user, :id, :username, :session_token, :first_name, :last_name, :default_card, :customer_id

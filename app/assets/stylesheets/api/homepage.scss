@@ -1,0 +1,747 @@
+// Place all the styles related to the api/sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.outerDiv{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.dollar-sign{
+    float: left;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden; }
+
+.thank-you > .before, .thank-you > .after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: -120px -218.66667px blue, 248px -16.66667px #00ff84, 190px 16.33333px #002bff, -113px -308.66667px #ff009d, -109px -287.66667px #ffb300, -50px -313.66667px #ff006e, 226px -31.66667px #ff4000, 180px -351.66667px #ff00d0, -12px -338.66667px #00f6ff, 220px -388.66667px #99ff00, -69px -27.66667px #ff0400, -111px -339.66667px #6200ff, 155px -237.66667px #00ddff, -152px -380.66667px #00ffd0, -50px -37.66667px #00ffdd, -95px -175.66667px #a6ff00, -88px 10.33333px #0d00ff, 112px -309.66667px #005eff, 69px -415.66667px #ff00a6, 168px -100.66667px #ff004c, -244px 24.33333px #ff6600, 97px -325.66667px #ff0066, -211px -182.66667px #00ffa2, 236px -126.66667px #b700ff, 140px -196.66667px #9000ff, 125px -175.66667px #00bbff, 118px -381.66667px #ff002f, 144px -111.66667px #ffae00, 36px -78.66667px #f600ff, -63px -196.66667px #c800ff, -218px -227.66667px #d4ff00, -134px -377.66667px #ea00ff, -36px -412.66667px #ff00d4, 209px -106.66667px #00fff2, 91px -278.66667px #000dff, -22px -191.66667px #9dff00, 139px -392.66667px #a6ff00, 56px -2.66667px #0099ff, -156px -276.66667px #ea00ff, -163px -233.66667px #00fffb, -238px -346.66667px #00ff73, 62px -363.66667px #0088ff, 244px -170.66667px #0062ff, 224px -142.66667px #b300ff, 141px -208.66667px #9000ff, 211px -285.66667px #ff6600, 181px -128.66667px #1e00ff, 90px -123.66667px #c800ff, 189px 70.33333px #00ffc8, -18px -383.66667px #00ff33, 100px -6.66667px #ff008c;
+  -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards; }
+
+.thank-you > .after {
+  -moz-animation-delay: 1.25s, 1.25s, 1.25s;
+  -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
+  -o-animation-delay: 1.25s, 1.25s, 1.25s;
+  -ms-animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  -moz-animation-duration: 1.25s, 1.25s, 6.25s;
+  -webkit-animation-duration: 1.25s, 1.25s, 6.25s;
+  -o-animation-duration: 1.25s, 1.25s, 6.25s;
+  -ms-animation-duration: 1.25s, 1.25s, 6.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s; }
+
+@-webkit-keyframes bang {
+  from {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white; } }
+@-moz-keyframes bang {
+  from {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white; } }
+@-o-keyframes bang {
+  from {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white; } }
+@-ms-keyframes bang {
+  from {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white; } }
+@keyframes bang {
+  from {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white; } }
+@-webkit-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0; } }
+@-moz-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0; } }
+@-o-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0; } }
+@-ms-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0; } }
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0; } }
+@-webkit-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%; }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%; }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%; }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%; }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%; } }
+@-moz-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%; }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%; }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%; }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%; }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%; } }
+@-o-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%; }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%; }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%; }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%; }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%; } }
+@-ms-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%; }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%; }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%; }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%; }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%; } }
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%; }
+
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%; }
+
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%; }
+
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%; }
+
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%; } }
+
+
+
+.thank-you{
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 70%, rgb(253, 253, 253) 100%);
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.background-img{
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.thank-you-order{
+  width: 100%;
+  text-align: center;
+}
+
+.thank-you-inner{
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10%;
+    font-size: 110%;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.397);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.thank-you-text{
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+.enter-location{
+    align-self: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 50%; top: 50%;
+    margin-top: 20%;
+    transform: translate(-50%);
+    font-weight: bold;
+    height: 70vh;
+    font-size: 120%;
+    color: rgb(58, 57, 57);
+}
+
+.enter-location-inner{
+    font-size: 80%;
+    font-weight: normal;
+}
+.homePageContainer{
+    margin-top: 0px;
+}
+.homepage-inner-container{
+    width: 100%;
+    position: relative;
+    //need to udpate this to better fit larger/smaller screens.
+    height: 100vh;
+    z-index: 1002;
+    background-color: white;
+
+}
+
+.logo-home{
+    height: 30px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.checkOut2:hover{
+    cursor: pointer;
+}
+
+.clearCart:hover{
+    cursor: pointer;
+}
+
+.social-ty{
+
+    height: 30px;
+    width:30px;
+    float: left;
+    margin: 10px;
+}
+
+.social-links{
+    position: relative;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%);
+    font-size: 110%;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    align-items: center;
+    align-content: center;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.logo-home:hover{
+   cursor: pointer;
+
+
+}
+
+.header-button:hover{
+    cursor: pointer;
+}
+
+.header-button2:hover{
+    cursor: pointer;
+}
+
+.homePageHeader{
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    z-index: 200000;
+
+}
+
+.homePageHeader2{
+    height: 50px;
+    background-color: white;
+    z-index: 200000;
+
+}
+
+
+
+.topLineHome{
+    width:100%;
+    height:1px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+
+    box-shadow: 0px 1px 5px 0.5px gray;
+    z-index: 200000;
+}
+
+
+
+.pickup{
+    position: absolute;
+    top: 1%; left: 7%;
+    transform: translate(-50%);
+    z-index: 1002;
+}
+
+.ASAP{
+    position: absolute;
+    top: 0.8%; left: 10.5%;
+    transform: translate(-50%);  
+    z-index: 1002;
+    color: rgb(81, 207, 216);
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.from{
+    position: absolute;
+    top: 1%; left: 13.5%;
+    transform: translate(-50%);
+    z-index: 1002;
+}
+
+.location{
+    
+    flex: right;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.magnifying-glass{
+    padding-top: 5px;
+    border-radius: 1px;
+    border-color: black;
+    float: left;
+
+}
+.location-input{
+
+
+    margin-top: 7px;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    float: right;
+    width: 40%;
+    box-sizing: border-box;
+    background-color: rgba(69, 69, 71, 0.151);
+    border: 0px;
+    z-index: 1002;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.location-input-text{
+    border: 0px;
+    background-color: transparent;
+    float: left;
+    padding-top: 6px;
+    margin-left: 5px;
+    width: 85%;
+
+
+
+
+}
+
+.location-drop{
+    z-index: 300000;
+    height: 30px;
+    width: 100%;
+    position: 'absolute';
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 1;
+    border-color: black;
+}
+
+.location-input-text-inner{
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+    width: 85%;
+    
+    
+
+
+}
+
+
+.cart-home{
+    position: absolute;
+    background-color: rgb(81, 207, 216);
+    height: 30px;
+    width: 30px;
+    top: 5%; right: 5%;
+    transform: translate(-50%);
+    border: 10px;
+    z-index: 2;
+    z-index: 1002;
+    float: left;
+}
+
+.cart-outside{
+    //background-color: rgb(81, 207, 216);
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    top: .2%; right: 2%;
+    transform: translate(-50%);
+    z-index: 1;
+    border-radius: 10px;
+    z-index: 1002;
+}
+
+.restaurantContainerList{
+    width: 100%;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    z-index: 1002;
+    background-color: white;
+    //margin-left: -10px;
+}
+.innerContainerList{
+    height:200px;
+    width:100%;
+    min-width: 450px;
+    color: black;
+    padding: 10px;
+    z-index: 1002;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: white;
+    margin-top: 1px;
+    list-style: none;
+    //margin-left: -40px;
+}
+
+.innerContainerList:hover{
+
+    background-color: rgba(81, 207, 216, 0.11);
+    transition-delay: 0.13s;
+    //margin-left: -40px;
+}
+
+.innerContainerList:hover ~ .markers{
+    height: 70px;
+    width: 40px;
+}
+
+.headerbackground{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+.float-container{
+    width: 100%;
+    position: relative;
+    top: 0px; left: 0%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1002;
+
+
+    
+   // margin: -10px;
+}
+.float-child-1{
+    width: 50%;
+    max-height: 90%;
+    float: right;
+    padding: 0;
+    //margin-right: -20px;
+    z-index: 1002;
+    margin-top: 1px
+
+
+}
+
+.float-child-2{
+    width: 50%;
+    min-width: 450px;
+    max-height: 95%;
+    float: left;
+    //margin-right: -20px; 
+    overflow-y: scroll;
+    z-index: 1002;  
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    text-decoration: none;
+    
+}
+
+
+.float-child-2::-webkit-scrollbar{
+    display: left;
+}
+
+.grayLine{
+    width:100%;
+    height: 1px;
+    background-color: lightgray;
+    z-index: 1002;
+}
+
+.img1{
+    width: calc(95%/2);
+    height: 120px;
+    margin-right: 2%;
+
+    //padding-left: 1%;
+    object-fit: cover;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.img2{
+    width: calc(90%/2);
+    height: 120px;
+
+
+    object-fit: cover;
+    border-radius: 5px;
+    z-index:  1100;
+}
+.images{
+    width: 100%;
+    height: 121px;
+    z-index:  1100;
+}
+
+.cafeName{
+    width: 100%;
+    height: 20px;
+    font-size: 110%;
+    font-weight: bold;
+    padding-top: 10px;
+    position: relative;
+    float: left;
+    z-index: 1002;
+    text-decoration: none;
+     color: black;
+}
+
+
+
+.cafeDescription{
+    position: relative;
+    font-size: 90%;
+    float: left;
+    padding-top: 1%;
+    z-index: 1002;
+    color: gray;
+    text-decoration: none;
+    max-lines: 1;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.dot{
+    float: left;
+    z-index: 1002;
+    color: gray;
+    text-decoration: none;
+    max-lines: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 50%;
+    text-overflow: ellipsis;
+}
+
+.dot2{
+    float: left;
+    z-index: 1002;
+    color: gray;
+    text-decoration: none;
+    max-lines: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+  
+.cafeDescription2{
+    position: relative;
+    font-size: 90%;
+    float: left;
+    padding-top: 1%;
+    z-index: 1002;
+    color: gray;
+    text-decoration: none;
+    max-lines: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    text-overflow: ellipsis;
+}
+
+
+
+.ready-in{
+    position: relative;
+    font-size: 90%;
+    float: right;
+    margin-right: 6%;
+    padding-top: 1%;
+    z-index: 1002;
+    color: gray;
+    text-decoration: none;
+    max-lines: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cafeAddress{
+    position: relative;
+    width: 100%;
+    font-size: 90%;
+    padding-top: 5px;
+    padding-right: 3%;
+    z-index: 1002;
+     color: gray;
+         text-decoration: none;
+    float: left;
+
+}
+
+.restaurantLinks{
+    text-decoration: none;
+    color: black;
+}
+
+.markers{
+    height: 50px;
+    width: 30px;
+    transform: translate(-50%, -100%);
+    z-index: 10005;
+}
+ 
+.markers:hover{
+    height: 60px;
+    width: 40px;
+    transform: translate(-50%, -100%);
+    z-index: 10005;
+    
+}
+
+.markerText{
+    width: 100px;
+    transform: translate(-50%);
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.markerTag{
+    
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}

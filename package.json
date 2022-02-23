@@ -1,0 +1,50 @@
+{
+  "name": "doordash_clone_final-copy",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "@rails/webpacker": "5.4.3",
+    "babel-loader": "^8.2.2",
+    "file-loader": "^6.2.0",
+    "google-map-react": "^2.1.10",
+    "react": "^17.0.2",
+    "react-ajax": "^0.1.1",
+    "react-dom": "^17.0.2",
+    "react-doom": "^1.0.0",
+    "react-geocode": "^0.2.3",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development",
+    "postinstall": "webpack"
+  },
+  "engines": {
+    "node": "12.16.2",
+    "npm": "7.24.0",
+    "yarn": "1.22.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-dev-server": "^3"
+  }
+}

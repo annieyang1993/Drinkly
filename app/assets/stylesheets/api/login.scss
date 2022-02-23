@@ -1,0 +1,174 @@
+// Place all the styles related to the api/sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo-blue{
+    height: 30px;
+    position: relative;
+    top: 4px; left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2px;
+    float: top;
+    margin-bottom: 20px;
+
+
+}
+
+.logo-greeting{
+    float: left;
+    z-index: 10;
+    margin-top: -600px;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.login-form-container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.login-form-box{
+    position: absolute;
+    width: 350px;
+    top: 60px; left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.topLine{
+    width:100%;
+    height:1px;
+    background-color: lightgray;
+    position: absolute;
+    top: 35px;
+}
+
+.footerAbsolute{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 104%;
+    height: 250px;
+    margin: -10px;
+    z-index: 1001;
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    padding: 20px;
+}
+
+.test{
+    color: rgb(111, 112, 112);
+    text-decoration: none;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.login-prompt{
+    float: top;
+}
+
+.signInText{
+    width: 100%;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+
+.login-input{
+
+    background-color: rgba(211, 211, 211, 0.582);
+    height: 30px;
+    border: 0px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-input-name1{
+
+    background-color: rgba(211, 211, 211, 0.582);
+    height: 30px;
+    border: 0px;
+    width: 165px;
+    border-radius: 5px;
+    float: left;
+}
+
+.login-input-name2{
+
+    background-color: rgba(211, 211, 211, 0.582);
+    height: 30px;
+    border: 0px;
+    width: 165px;
+    border-radius: 5px;
+    float: right;
+}
+
+.name-line{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+.login-input-name-label-1{
+    float: left;
+}
+
+.login-input-name-label-2{
+    float: right;
+}
+
+
+.signUpNav{
+    float: top;
+    text-decoration: none;
+    margin-left: 5px;
+
+}
+.login-form{
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+ul.errors{
+    list-style-type: none;
+}
+
+.errors{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -20px;
+    opacity: 0.6;
+    position: relative;
+    top: 1%;
+    font-weight: normal;
+}
+
+.session-submit{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    background-color: rgb(81, 207, 216);
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 100%;
+    font-size: 120%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+
+}

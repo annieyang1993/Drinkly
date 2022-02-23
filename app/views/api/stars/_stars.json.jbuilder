@@ -1,0 +1,1 @@
+json.extract! star, :id, :user_id, :restaurant_id, :stars, :max_stars
