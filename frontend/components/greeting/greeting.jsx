@@ -94,8 +94,8 @@ function GreetingPage(){
           <Link onClick={()=>{authContext.setLocationSearch('');
         authContext.setLocationSearchBool(false); authContext.setCurrentRestaurant(authContext.restaurantHash[element])}}  className= "splash-links" to={`/api/restaurants/${authContext.restaurantHash[element]["id"]}`}>
           <div key={i} className="recommended-container">
-            <img className="element-splash-img" src={`${authContext.restaurantHash[element]["img1"]}`}/>
-            <div className="element-name">{authContext.restaurantHash[element]["name"]}</div>
+            <img className="element-splash-img" src={`${authContext.restaurantHash[element]["img1"]}`}/> 
+            <div className="element-name" style={{width: '100%'}}>{authContext.restaurantHash[element]["name"]}</div>
             <div className="info-box">
             <div className = "info-below">Ready in {authContext.restaurantHash[element]["ready_in"]} min </div>
             <div className = "info-below2">{authContext.restaurantHash[element]["operating_time"]}</div>
