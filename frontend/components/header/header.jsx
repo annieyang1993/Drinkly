@@ -51,7 +51,7 @@ const Header = () => {
     authContext.setLoaded(false);
     authContext.setAddress({});
     authContext.setLocation({lat: 41.4216687, lng: -104.1715192 });
-    authContext.setSaved([])
+    authContext.setSaves([])
     window.location.href = "/#/";
     };
     const updateUserLocation = (user_id, location) => {
